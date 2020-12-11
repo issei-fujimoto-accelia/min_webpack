@@ -1,0 +1,20 @@
+{
+   "name": "min_webpack",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+    "scripts": {
+	"serve": "node dev_server/server.js",
+	"build_dev": "webpack --mode development",
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+	"webpack": "^5.10.0",
+	"webpack-cli": "^4.2.0"
+    },
+    "dependencies": {
+	"express": "^4.17.1"
+    }
+}

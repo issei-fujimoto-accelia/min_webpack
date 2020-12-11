@@ -1,14 +1,29 @@
 # webpack 最小構成
-
+## start
 ```
-npm run build_dev
-```
-
-`dist`以下に、build
-
-```
-npm run serve
+npm install
 ```
 
-expressで、 index.htmlとdist以下のjsを表示
+
+start dev server
+
+
+```
+npm start
+```
+
+
+## build(dev)
+
+```
+npm run build
+```
+
+## build(prod)
+
+```
+npm run build:prod
+```
+
+
 

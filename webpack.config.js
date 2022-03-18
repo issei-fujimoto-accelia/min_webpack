@@ -12,7 +12,7 @@ module.exports = {
     devServer: {
 	open: true,
         openPage: "index.html",
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'docs'),
 	watchContentBase: true,
         port: 8080,
         host: `0.0.0.0`,
@@ -20,12 +20,13 @@ module.exports = {
     output: {
 	filename: '[name].js',
 	publicPath: '/js/',
-	path: __dirname + '/dist'
+	path: __dirname + '/docs'
     },
     plugins: [
 	new CopyPlugin({
 	    patterns: [
-		"./js/sw.js",		
+		"./public/index.html",
+		"./js/sw.js",	
 	    ],
 	}),
     ]

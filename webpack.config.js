@@ -20,13 +20,13 @@ module.exports = {
     output: {
 	filename: '[name].js',
 	publicPath: '/js/',
-	path: __dirname + '/docs'
+	path: __dirname + '/docs/js'
     },
     plugins: [
 	new CopyPlugin({
 	    patterns: [
-		"./public/index.html",
-		"./js/sw.js",	
+		{from: "./public/index.html", to:"../"},
+		{from:"./js/sw.js", to:"../"}
 	    ],
 	}),
     ]

@@ -2,8 +2,10 @@ import {hello, set_title} from './modules/module1.js'
 
 const registerSW = () => {
     if ('serviceWorker' in navigator) {
-	window.addEventListener('load', () => {	    
-	    navigator.serviceWorker.register('/js/sw.js')
+	window.addEventListener('load', () => {
+	    const p = "/min_webpack/sw.js"
+	    //const p = "/js/sw.js"
+	    navigator.serviceWorker.register(p)
 		.then((r) => {
 		    console.log("success", r)
 		})

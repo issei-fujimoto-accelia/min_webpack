@@ -15,7 +15,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'docs'),
 	watchContentBase: true,
         port: 8080,
-        host: `0.0.0.0`,
+        host: `127.0.0.1`,
     },
     output: {
 	filename: '[name].js',

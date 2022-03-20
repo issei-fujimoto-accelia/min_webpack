@@ -35,9 +35,9 @@ const setOnClick = () => {
     console.log(btn);
     btn.addEventListener("click", () => {
 	const n = new Notification(
-	    'タイトル',
+	    'タイトルaaaa',
 	    {	    
-		body: '本文です',
+		body: '本文ですaaa',
 		tag: 'tag',
 		data: {
 		    xxx: 'データ'

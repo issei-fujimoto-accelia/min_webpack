@@ -25,9 +25,6 @@ const initSW = () => {
     navigator.serviceWorker?.ready
 	.then((r) => {
 	    console.log("ready", r)
-	    if(requestPermission()) {
-		popup()
-	    }
 	})
 }
 
